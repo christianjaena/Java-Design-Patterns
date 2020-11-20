@@ -1,4 +1,4 @@
-package structuralPatterns.Adapter;
+package structuralPatterns.Adapter.AdapterExercise.CoffeeMachine;
 
 public interface CoffeeMachineInterface {
     public void chooseFirstSelection();

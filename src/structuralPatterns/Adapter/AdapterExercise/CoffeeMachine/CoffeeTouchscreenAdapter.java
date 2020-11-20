@@ -1,4 +1,4 @@
-package structuralPatterns.Adapter;
+package structuralPatterns.Adapter.AdapterExercise.CoffeeMachine;
 
 public class CoffeeTouchscreenAdapter implements CoffeeMachineInterface {
     private OldCoffeeMachine oldVendingMachine;
