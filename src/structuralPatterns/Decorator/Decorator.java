@@ -73,5 +73,4 @@ class AuthenticatedWebPage extends WebPageDecorator {
         this.authenticateUser();
     }
 
-
 }
