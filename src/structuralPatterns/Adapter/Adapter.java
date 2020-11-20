@@ -1,9 +1,8 @@
-package structuralPatterns;
-
-import netscape.javascript.JSObject;
+package structuralPatterns.Adapter;
 
 public class Adapter {
     public static void main(String[] args) {
+        // Step 3: Send the request from the client to the adapter using the target interface.
         String webHost = "Host: https://google.com/n/r";
         WebService service = new WebService(webHost);
         WebAdapter adapter = new WebAdapter();
@@ -14,11 +13,12 @@ public class Adapter {
 
 }
 
-
+// Step 1: Design the target interface.
 interface IWebRequester {
    public int request(String obj);
 }
 
+// Step 2: Implement the target interface with the adapter class.
 class WebAdapter implements IWebRequester {
    private WebService service;
 
@@ -42,9 +42,7 @@ class WebAdapter implements IWebRequester {
 }
 
 class WebService {
-    public WebService(String host) {
-
-    }
+    public WebService(String host) { }
    public String request(String jsonObj) {
       return null;
    }

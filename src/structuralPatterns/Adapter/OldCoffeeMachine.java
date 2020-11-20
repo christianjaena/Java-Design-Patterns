@@ -1,4 +1,4 @@
-package structuralPatterns.AdapterPatternExercise;
+package structuralPatterns.Adapter;
 
 public class OldCoffeeMachine {
     public void selectA() {

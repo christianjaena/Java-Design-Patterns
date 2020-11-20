@@ -1,4 +1,4 @@
-package structuralPatterns;
+package structuralPatterns.Facade;
 
 import java.util.ArrayList;
 

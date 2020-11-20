@@ -1,4 +1,4 @@
-package creationalPatterns;
+package creationalPatterns.Factory;
 
 public class FactoryObject {
     public static void main(String[] args) {

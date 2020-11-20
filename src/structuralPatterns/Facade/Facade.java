@@ -1,11 +1,11 @@
-package structuralPatterns;
+package structuralPatterns.Facade;
 
 import java.math.BigDecimal;
-import java.util.HashMap;
 import java.util.Hashtable;
 
 public class Facade {
     public static void main(String[] args) {
+        // Step 4: Use the Facade class to access the subsystem.
         BankService bankService = new BankService();
 
         int mySaving = bankService.createNewAccount("saving", new BigDecimal(500.00));
@@ -16,13 +16,14 @@ public class Facade {
     }
 }
 
+// STEP 1: Design the interface.
 interface IAccount {
     public void deposit(BigDecimal amount);
     public void withdraw(BigDecimal amount);
     public void transfer(int accountNo, BigDecimal amount);
     public int getAccountNumber();
 }
-
+// STEP 2: Implement the interface with one or more classes.
 class Chequing implements IAccount {
     private BigDecimal initialAmount;
 
@@ -107,6 +108,7 @@ class Investment implements IAccount {
     }
 }
 
+// Step 3: Create a Facade class and wrap the classes that implement the interface.
 class BankService {
     private Hashtable<Integer, IAccount> bankAccounts;
 
