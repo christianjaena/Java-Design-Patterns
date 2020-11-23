@@ -37,7 +37,6 @@ public class OrderView extends JPanel implements Observer, ActionListener {
         }
     }
 
-
     @Override
     public void update(Observable o, Object arg) {
         display(((StoreOrder) o).getItemList(), ((StoreOrder) o).getPriceList());
